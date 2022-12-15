@@ -1,5 +1,7 @@
 export const getInfo = "select s.fecha.$date, s.tipo_evento from S3Object[*][*] s";
 
+export const eventId45 =  "select * from S3Object[*][*] s where s.tipo_evento in (5) ";
+
 export const getDevices = `SELECT id_equipo as deviceId,
                                   nombre_equipo as name,
                                   nombre_empresa as company_name
